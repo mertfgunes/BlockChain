@@ -21,5 +21,7 @@ public class Block {
 	public String[]  getTransaction () {
 		return transaction;
 	}
-	
+	public int getBlockHash() {
+		return blockHash;
+	}
 }
