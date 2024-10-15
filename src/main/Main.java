@@ -18,10 +18,17 @@ public class Main {
 		String[] block2Transaction = {"satoshi sent mert 10 bitcoin", "mert sent 10 bitcoins to starbucks"};
 		Block block2 = new Block(genesisBlock.getBlockHash(), block2Transaction);
 		
+		String[] block3Transaction = {"mert has sent 1 bitcoin to mom."};
+		Block block3 = new Block(block2.getBlockHash(), block2Transaction);
+		
 
 		System.out.println("Hash of block1 : ");
 		System.out.println(genesisBlock.getBlockHash());
 		System.out.println("Hash of block2 : ");
 		System.out.println(block2.getBlockHash());
+
+		System.out.println("Hash of block2 : ");
+		System.out.println(block3.getBlockHash());
+
 	}
 }
